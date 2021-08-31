@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="cell.js"></script>
+    <script src="algorithm/dfs.js"></script>
+    <script src="algorithm/bfs.js"></script>
+    <script src="algorithm/aStar.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>p5 Snake Game</title>
+</head>
+
+<body>
+<div id="container">
+    <div id="view"></div>
+    <div id="controller">
+        <span>Frame Rate: </span>
+        <input id="frameRate" type="number" min="10" max="60" value="10" />
+        <select id="mode" name="mode">
+            <option value="bfs">Bredth-first Search</option>
+            <option value="dfs">Depth-first search</option>
+            <option value="astar">A*</option>
+        </select>
+        <button id="reset">Restart 🔃</button>
+        <button id="openGithub">🤖 Github</button>
+    </div>
+</div>
+</body>
+
+</html>
